@@ -117,7 +117,7 @@ jobs:
             tag-suffix: ''
           - device: cuda
             tag-suffix: '-cuda'
-            platforms: linux/amd64
+            platforms: linux/amd64,linux/arm64
           - device: openvino
             tag-suffix: '-openvino'
             platforms: linux/amd64
