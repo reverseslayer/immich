@@ -25,7 +25,7 @@ FROM builder-cpu AS builder-rknn
 FROM rocm/dev-ubuntu-22.04:6.3.4-complete AS builder-rocm
 
 # renovate: datasource=github-releases depName=Microsoft/onnxruntime
-ARG ONNXRUNTIME_VERSION="v1.20.1"
+ARG ONNXRUNTIME_VERSION="v1.22.0"
 WORKDIR /code
 
 RUN apt-get update && apt-get install -y --no-install-recommends wget git python3.10-venv
